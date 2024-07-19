@@ -61,7 +61,7 @@ button:hover {
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
 }
 
 h2 {
@@ -75,24 +75,4 @@ p {
 
 .text {
     text-align: center;
-}
-
-.avatar {
-    width: 550px;
-    height: 600px;
-    border-radius: 50%;
-}
-
-.container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr auto;
-    column-gap: 20px;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header-text {
-    text-align: left;
 }

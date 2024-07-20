@@ -33,6 +33,13 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #333;
+    border-style: groove;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -54,6 +61,8 @@ button {
     transition-duration: 0.4s;
     display: block;
     margin: auto;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover {
@@ -84,12 +93,27 @@ p {
     gap: 20px
 }
 
+.skill {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+}
+
 .skill i {
     font-size: 48px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .skill p {
-    margin-top: 10px;
+    margin: 0;
     font-size: 18px;
 }

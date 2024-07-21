@@ -13,8 +13,9 @@ header {
 }
 
 nav ul {
-    list-style: none;   /*Edit, animation?*/
+    list-style: none;
     padding: 0;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -121,7 +122,7 @@ p {
 .profileImg {
     border-radius: 50%;
     width: 600px;
-    height: 600px;
+    height: 610px;
     border-style: solid;
     border-color: #f4f4f4;
 }

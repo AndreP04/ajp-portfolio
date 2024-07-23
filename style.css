@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -71,7 +75,7 @@ button {
     background-color: #333;
     color: white;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 12px;
     transition-duration: 0.4s;
     display: block;
@@ -171,4 +175,19 @@ p {
     height: 300px;
     border-style: solid;
     border-color: #f4f4f4;
+}
+
+.goldenKey {
+    border-radius: 8%;
+    border-style: solid;
+    border-color: #333;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials a:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
 }

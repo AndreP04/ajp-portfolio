@@ -224,3 +224,8 @@ p1 {
     flex-shrink: 0;
     margin-left: 20px;
 }
+
+.potchGim {
+    width: 200px;
+    height: 200px;
+}

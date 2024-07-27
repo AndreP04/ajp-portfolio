@@ -6,7 +6,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 header {
@@ -28,6 +28,7 @@ header {
 
 .header-contents img {
     margin-right: 20px;
+    max-width: 100%;
 }
 
 nav ul {
@@ -93,6 +94,10 @@ h1 {
 }
 
 h2 {
+    text-align: center;
+}
+
+h3 {
     text-align: center;
 }
 
@@ -208,7 +213,7 @@ p1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #333;
     padding: 1rem;
     margin: 1rem 0;
     width: 100%;
@@ -218,6 +223,7 @@ p1 {
 
 .education-desc {
     flex: 1;
+    color: white;
 }
 
 .education-logo {
@@ -228,4 +234,11 @@ p1 {
 .potchGim {
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+}
+
+.nwuLogo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }

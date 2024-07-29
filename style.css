@@ -103,6 +103,7 @@ h3 {
 
 p {
     text-align: center;
+    font-size: 18px;
 }
 
 p1 {
@@ -116,6 +117,7 @@ p2 {
 
 .text {
     text-align: center;
+    font-size: 18px;
 }
 
 .skill-container {
@@ -188,6 +190,7 @@ p2 {
     height: 300px;
     border-style: solid;
     border-color: #f4f4f4;
+    display: flex;
 }
 
 .goldenKey {
@@ -239,6 +242,7 @@ p2 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    display: flex;
 }
 
 .nwuLogo {

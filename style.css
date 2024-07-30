@@ -34,7 +34,6 @@ header {
 .headerNav {
     background-color: #333;
     overflow: hidden;
-    z-index: 10;
   }
 
   .headerNav a {
@@ -108,7 +107,10 @@ section {
     border-color: #333;
     border-style: groove;
     position: relative;
-    z-index: -200;
+}
+
+.about {
+    z-index: -1;
 }
 
 section:hover {

@@ -106,11 +106,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-color: #333;
     border-style: groove;
-    position: relative;
-}
-
-.about {
-    z-index: -1;
 }
 
 section:hover {

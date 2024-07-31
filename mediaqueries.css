@@ -4,6 +4,19 @@
         flex-direction: column;
         gap: 2em;
         display: flex;
+        overflow-x: hidden;
+    }
+
+    .name {
+        font-size: 10px;
+    }
+
+    .Menu {
+        display: none;
+    }
+
+    nav a {
+        display: none;
     }
 
    

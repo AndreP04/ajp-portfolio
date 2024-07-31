@@ -1,16 +1,10 @@
 @media screen and (max-width: 800px) {
-    section {
-        max-width: 96vw;
-        display: flex;
+    body, section {
+        max-width: 100%;
         flex-direction: column;
-        gap: 5em;
+        gap: 2em;
+        display: flex;
     }
 
-    nav {
-        display: none;
-    }
-
-    footer {
-        font-size: 10px;
-    }
+   
 }

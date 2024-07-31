@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,29 +20,28 @@ header {
     align-items: center;
 }
 
-.header-contents {
+.headerImg {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-
-.header-contents img {
     margin-right: 20px;
     max-width: 100%;
+    gap: 20px;
 }
 
 .Menu {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    max-width: 100%;
 }
 
 nav a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -197,13 +197,6 @@ p2 {
     display: flex;
 }
 
-.goldenKey {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
-
 .socials {
     text-align: center;
 }
@@ -228,7 +221,7 @@ p2 {
     padding: 1rem;
     margin: 1rem 0;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 8px;
 }
 
@@ -244,13 +237,15 @@ p2 {
 
 .potchGim {
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 50%;
     display: flex;
+    max-width: 100%;
 }
 
 .nwuLogo {
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 50%;
+    max-width: 100%;
 }

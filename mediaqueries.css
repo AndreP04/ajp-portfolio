@@ -1,9 +1,17 @@
 @media screen and (max-width: 800px) {
-    body, section {
+    section {
         max-width: 100%;
         flex-direction: column;
         gap: 2em;
         display: flex;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
         overflow-x: hidden;
     }
 

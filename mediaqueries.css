@@ -1,0 +1,16 @@
+@media screen and (max-width: 800px) {
+    section {
+        max-width: 96vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}

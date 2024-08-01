@@ -24,9 +24,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
     max-width: 100%;
     gap: 20px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Menu {
@@ -116,6 +121,15 @@ p1 {
 
 p2 {
     font-size: 20px;
+}
+
+#mobileNav {
+    display: none;
+    flex-direction: row;
+}
+
+.mobIcon {
+
 }
 
 

@@ -100,6 +100,7 @@ button:hover {
 
 h2 {
     text-align: center;
+    font-size: xx-large;
 }
 
 h3 {
@@ -112,10 +113,6 @@ p {
 }
 
 p1 {
-    font-size: 17px;
-}
-
-p2 {
     font-size: 20px;
 }
 

@@ -126,12 +126,8 @@ p2 {
 #mobileNav {
     display: none;
     flex-direction: row;
+    font-size: 25px;
 }
-
-.mobIcon {
-
-}
-
 
 .text {
     text-align: center;

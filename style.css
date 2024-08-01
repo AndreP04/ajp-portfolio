@@ -34,7 +34,7 @@ header {
     justify-content: center;
 }
 
-.Menu {
+#Menu {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -96,10 +96,6 @@ button {
 
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-h1 {
-    text-align: center;
 }
 
 h2 {
@@ -249,7 +245,6 @@ p2 {
     width: 200px;
     height: auto;
     border-radius: 50%;
-    display: flex;
     max-width: 100%;
 }
 

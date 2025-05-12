@@ -216,7 +216,26 @@ p1 {
     gap: 20px;
 }
 
+.certification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .education-school {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+.certification-company {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -233,7 +252,17 @@ p1 {
     color: white;
 }
 
+.certification-desc{
+    flex: 1;
+    color: white;
+}
+
 .education-logo {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.certification-logo{
     flex-shrink: 0;
     margin-left: 20px;
 }

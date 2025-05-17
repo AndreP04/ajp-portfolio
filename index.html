@@ -7,50 +7,49 @@
     <title>Andre Pretorius</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-
-    <!--AnimateOnScroll JS Library-->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Font Awesome Library for skill and trait icons, as well as mobile navigation icons-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="Assets/person-hiking-solid.svg">
 </head>
 <body>
-
-    <!-- Initiate AnimateOnScroll -->
-    <script>
-        AOS.init()
-    </script>
-
     
     <!--Header-->
-    <header data-aos="fade-down" data-aos-delay="200">
+    <header>
         <!--Name and Description-->
-        <div class="name" data-aos="fade-right" data-aos-delay="550" style="text-align: center;">
-            <h1 style="margin: 0;">
-                Hi, I'm Andre 👋
-                <span style="font-size: 1.2rem; color: white; display: block; margin-top: 0.5rem;">
-                    Junior Systems Engineer
-                </span>
-            </h1>
-        </div>
-        <br>
+        <h1 id="name" style="text-align: center;"></h1>
     </header>
 
+    <script>
+        window.onload = function () {
+            const text = "Hi, I'm Andre 👋";
+            const element = document.getElementById("name");
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                }
+            }
+
+            type();
+        };
+    </script>
+
     <!--Education Section-->
-    <section id="education" data-aos="fade-up" data-aos-delay="150">
+    <section id="education">
         <h2><u>Education</u></h2>
         <div class="education-container">
 
             <div class="education-school">
 
-                <div class="education-desc" data-aos="fade-right" data-aos-delay="150">
+                <div class="education-desc">
                     <h3>North West University</h3>
                     <p>Bachelor of Science in Information Technology<br>2022 - 2024</p>
                     <p>Golden Key International Honour Society Member<br>2023</p>
                 </div>
 
-                <div class="education-logo" data-aos="fade-left" data-aos-delay="150">
+                <div class="education-logo">
                     <img src="Assets/nwuLogo.png" alt="North West University" class="nwuLogo" height="60">
                 </div>
 
@@ -58,14 +57,14 @@
 
             <div class="education-school">
 
-                <div class="education-desc" data-aos="fade-right" data-aos-delay="150">
+                <div class="education-desc">
                     <h3><b>Potchefstroom Gimnasium</b></h3>
                     <p>National Senior Certificate<br>2019 - 2021</p>
                     <p>Perfect Attendance for 12 Years</p>
                     <p>Matric Silver Academic Merit</p>
                 </div>
 
-                <div class="education-logo" data-aos="fade-left" data-aos-delay="150">
+                <div class="education-logo">
                     <img src="Assets/potch_gim.png" alt="Potchefstroom Gimnasium Logo" class="potchGim" height="60">
                 </div>
 
@@ -75,18 +74,18 @@
     </section>
 
     <!--Certification Section-->
-    <section id="certifications" data-aos="fade-up" data-aos-delay="150">
+    <section id="certifications">
         <h2><u>Certifications</u></h2>
         <div class="certification-container">
 
             <div class="certification-company">
 
-                <div class="certification-desc" data-aos="fade-right" data-aos-delay="150">
+                <div class="certification-desc">
                     <h3>Amazon Web Services</h3>
                     <p>AWS Cloud Practitioner</p>
                 </div>
 
-                <div class="certification-logo" data-aos="fade-left" data-aos-delay="150">
+                <div class="certification-logo">
                     <img src="Assets/cloud-practitioner.png" alt="North West University" class="nwuLogo" height="60">
                 </div>
 
@@ -94,12 +93,12 @@
 
             <div class="certification-company">
 
-                <div class="certification-desc" data-aos="fade-right" data-aos-delay="150">
+                <div class="certification-desc">
                     <h3>FreeCodeCamp</h3>
                     <p>Backend Development and APIs</p>
                 </div>
 
-                <div class="certification-logo" data-aos="fade-left" data-aos-delay="150">
+                <div class="certification-logo">
                     <img src="Assets/freecodecamp.jpg" alt="North West University" class="nwuLogo" height="60">
                 </div>
 

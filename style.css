@@ -17,10 +17,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: xx-large;
 }
 
 .name {
-    font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +56,25 @@ p {
 
 p1 {
     font-size: 20px;
+}
+
+.typing {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    font-size: xx-large;
+    width: fit-content;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.typing::after {
+    content: '';
+    animation: blink 0.7s infinite;
 }
 
 #mobileNav {

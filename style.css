@@ -126,6 +126,7 @@ p1 {
     width: 100%;
     max-width: 900px;
     border-radius: 8px;
+    background: white;
 }
 
 .certification-company {
@@ -137,26 +138,29 @@ p1 {
     width: 100%;
     max-width: 900px;
     border-radius: 8px;
+    background: white;
 }
 
 .education-desc {
     flex: 1;
-    color: white;
+    color: black;
 }
 
-.certification-desc{
+.certification-desc {
     flex: 1;
-    color: white;
+    color: black;
 }
 
 .education-logo {
     flex-shrink: 0;
     margin-left: 20px;
+    opacity: 50%;
 }
 
 .certification-logo {
     flex-shrink: 0;
     margin-left: 20px;
+    opacity: 50%;
 }
 
 .potchGim {

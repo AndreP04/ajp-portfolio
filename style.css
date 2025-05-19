@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: white;
+    background: rgb(0, 0, 0);
 }
 
 header {
@@ -22,12 +22,7 @@ header {
     align-items: center;
     font-size: xx-large;
     background: linear-gradient(135deg, #091540, #1F2F98);
-}
-
-.name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 section {
@@ -40,9 +35,10 @@ section {
 footer {
     color: white;
     text-align: center;
-    padding: 0rem;
-    bottom: 0;
-    width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #091540, #1F2F98);
 }
 
 h2 {
@@ -154,13 +150,11 @@ p1 {
 .education-logo {
     flex-shrink: 0;
     margin-left: 20px;
-    opacity: 50%;
 }
 
 .certification-logo {
     flex-shrink: 0;
     margin-left: 20px;
-    opacity: 50%;
 }
 
 .potchGim {

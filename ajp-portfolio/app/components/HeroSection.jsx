@@ -35,10 +35,10 @@ const HeroSection = () => {
                         My Description
                     </p>
                     <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-900 hover:bg-slate-200 text-white">
+                        <button className="cursor-pointer px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-900 hover:bg-slate-200 text-white">
                             Hire Me
                         </button>
-                        <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-900 hover:bg-slate-800 text-white mt-3">
+                        <button className="cursor-pointer px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-900 hover:bg-slate-800 text-white mt-3">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                         </button>
                     </div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
                         <Image
                             src="/hero-image-2.png"
                             alt="hero image"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-130"
                             width={300}
                             height={300}
                         />

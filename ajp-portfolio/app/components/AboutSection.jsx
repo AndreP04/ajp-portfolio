@@ -34,7 +34,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
+        <li>AWS Cloud Practitioner (In progress)</li>
         <li>FreeCodeCamp Backend Development and APIs</li>
         <li>Golden Key International Honours Society</li>
       </ul>

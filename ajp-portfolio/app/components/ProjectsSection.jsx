@@ -8,7 +8,8 @@ const projectsData = [
   {
     id: 1,
     title: "ClassMate",
-    description: "ClassMate Description",
+    description:
+      "ClassMate is a web-based management platform designed to streamline student and educator management. Built with a modern stack to provide both administrators and educators with a seamless experience.",
     image: "/classmate.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -17,8 +18,9 @@ const projectsData = [
   {
     id: 2,
     title: "NWU Human Movement Sciences Management Platform",
-    description: "NWU HMS Description",
-    image: "/classmate.png",
+    description:
+      "The NWU Human Movement Sciences Digital Platform is an integrated solution designed to enhance the accessibility and engagement of Human Movement Sciences resources at North West University. This project includes both a website and mobile application, aimed at providing students and faculty with a seamless experience to access information, resources, and tools related to the School of Human Movement Sciences.",
+    image: "/hms.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/"

@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "AJ Pretorius",
-  description: "My personal portfolio"
+  description: "My personal portfolio",
+  icons: "/icon.svg"
 };
 
 export default function RootLayout({ children }) {

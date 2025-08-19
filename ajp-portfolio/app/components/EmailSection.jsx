@@ -1,10 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import GitHubIcon from "../../public/github-icon.svg";
-import LinkedInIcon from "../../public/linkedin-icon.svg";
-import LeetCodeIcon from "../../public/leetcode-icon.svg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import Link from "next/link";
-import Image from "next/image";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -51,14 +49,14 @@ const EmailSection = () => {
           my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href={"https://github.com/AndreP04"}>
-            <Image src={GitHubIcon} alt="Github Icon" width={50} height={50} />
+          <Link href="https://github.com/AndreP04" target="_blank">
+            <FaGithub size={50} />
           </Link>
-          <Link href={"https://www.linkedin.com/in/andre-pretorius-680592285/"}>
-            <Image src={LinkedInIcon} alt="LinkedIn Icon" width={50} height={50} />
+          <Link href="https://www.linkedin.com/in/andre-pretorius-680592285/" target="_blank">
+            <FaLinkedin size={50} />
           </Link>
-          <Link href={"https://leetcode.com/u/AndrePret04/"}>
-            <Image src={LeetCodeIcon} alt="LeetCode Icon" width={50} height={50} />
+          <Link href="https://leetcode.com/u/AndrePret04/" target="_blank">
+            <SiLeetcode size={50} />
           </Link>
         </div>
       </div>

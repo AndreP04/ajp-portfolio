@@ -1,33 +1,42 @@
-// import { EmailTemplate } from '../../../components/EmailTemplate';
-import { Resend } from 'resend';
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
-
-export async function POST(req, res) {
-    const { body } = await req.json();
+export async function POST(req) {
+  try {
+    const body = await req.json();
     const { email, subject, message } = body;
-    try {
-        const { data, error } = await resend.emails.send({
-            from: fromEmail,
-            to: [email],
-            subject: subject,
-            react: (
-                <>
-                    <h1>{subject}</h1>
-                    <p>Thank you for contacting me!</p>
-                    <p>New message submitted</p>
-                    <p>{message}</p>
-                </>
-            )
-        });
 
-        if (error) {
-            return Response.json({ error }, { status: 500 });
-        }
+    // Nodemailer with iCloud SMTP
+    const transporter = nodemailer.createTransport({
+      host: "smtp.mail.me.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
+      }
+    });
 
-        return Response.json(data);
-    } catch (error) {
-        return Response.json({ error }, { status: 500 });
-    }
+    // Build email
+    await transporter.sendMail({
+      from: `"Portfolio Contact" <${process.env.EMAIL}>`,
+      to: process.env.EMAIL,
+      replyTo: email,
+      subject: `Portfolio Message: ${subject}`,
+      text: `You have a new message from your portfolio site:
+
+From: ${email}
+Subject: ${subject}
+
+Message:
+${message}`
+    });
+
+    return new Response(JSON.stringify({ success: true }), { status: 200, headers: { "Content-Type": "application/json" } });
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return new Response(JSON.stringify({ success: false, error: error.message }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" }
+    });
+  }
 }

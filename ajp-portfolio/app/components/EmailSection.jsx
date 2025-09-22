@@ -100,7 +100,10 @@ const EmailSection = () => {
               placeholder="Lets talk about..."
             />
           </div>
-          <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
+          <button
+            type="submit"
+            className="cursor-pointer bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+          >
             Send the message
           </button>
           {emailSubmitted && <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>}

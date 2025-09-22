@@ -13,6 +13,10 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>Node.js</li>
         <li>C#</li>
+        <li>.NET</li>
+        <li>Git</li>
+        <li>Github</li>
+        <li>Docker</li>
         <li>MongoDB</li>
         <li>SQL</li>
       </ul>
@@ -36,7 +40,17 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>AWS Cloud Practitioner (In progress)</li>
         <li>FreeCodeCamp Backend Development and APIs</li>
+      </ul>
+    )
+  },
+  {
+    title: "Achievements",
+    id: "achievements",
+    content: (
+      <ul className="list-disc pl-2">
         <li>Golden Key International Honours Society</li>
+        <li>Grade 12 Silver Academic Merit</li>
+        <li>12 Years of School Attendance Without Absence</li>
       </ul>
     )
   }
@@ -74,6 +88,10 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton selectTab={() => handleTabChange("achievements")} active={tab === "achievements"}>
+              {" "}
+              Achievements{" "}
             </TabButton>
           </div>
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>

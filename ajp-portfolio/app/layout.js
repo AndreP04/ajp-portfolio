@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Particles from "./components/Patricles";
+import ParticlesBackground from "./components/ParticlesBackground";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-black text-white`}>
         {/* Particles Background */}
         <div className="fixed inset-0 -z-10">
-          <Particles
+          <ParticlesBackground
             particleCount={1000}
             particleSpread={10}
             particleColors={["#00b4d8", "#90e0ef", "#caf0f8"]}

@@ -47,11 +47,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="relative rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
+          <div className="relative rounded-full bg-transparent w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
-              src="/hero-image-2.png"
+              src="/astronaut.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-130"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-80"
               width={300}
               height={300}
             />

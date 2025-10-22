@@ -25,7 +25,7 @@ const HeroSection = () => {
             />
           </h1>
 
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">Welcome to my portfolio!</p>
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">I prefer penguins over windows ꜀( ꜆-ࡇ-)꜆ ᶻ 𝗓 𐰁</p>
           <div>
             <button
               onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}

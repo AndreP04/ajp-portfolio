@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {/* Particles Background */}
         <div className="fixed inset-0 -z-10">
           <ParticlesBackground
-            particleCount={1000}
+            particleCount={1500}
             particleSpread={10}
             particleColors={["#00b4d8", "#90e0ef", "#caf0f8"]}
             speed={0.25}

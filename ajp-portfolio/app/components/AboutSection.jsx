@@ -73,8 +73,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I'm a passionate backend software engineer based in South Africa, driven by a deep desire to learn, and create meaningful
-            software.
+            I am a passionate software engineer based in South Africa, driven by a deep desire to learn, and create meaningful software.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>

@@ -53,6 +53,18 @@ const TAB_DATA = [
         <li>12 Years of School Attendance Without Absence</li>
       </ul>
     )
+  },
+  {
+    title: "Roadmap",
+    id: "roadmap",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>NestJS</li>
+        <li>Angular</li>
+        <li>GitLab</li>
+        <li>GCloud</li>
+      </ul>
+    )
   }
 ];
 
@@ -80,7 +92,11 @@ const AboutSection = () => {
               {" "}
               Skills{" "}
             </TabButton>
-            <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
+            <TabButton selectTab={() => handleTabChange("roadmap")} active={tab === "roadmap"}>
+              {" "}
+              Roadmap{" "}
+            </TabButton>
+            {/* <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
               {" "}
               Education{" "}
             </TabButton>
@@ -91,7 +107,7 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("achievements")} active={tab === "achievements"}>
               {" "}
               Achievements{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>

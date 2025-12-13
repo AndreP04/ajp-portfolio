@@ -18,14 +18,14 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300">Hi, I'm </span>
             <br></br>
             <TypeAnimation
-              sequence={["Andre", 1000, "A Problem Solver", 1000, "A Software Engineer", 1000, "An Innovator", 1000]}
+              sequence={["Andre", 1000, "A Fullstack Engineer", 2000, "A Problem Solver", 1000, "An Innovator", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
 
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">I prefer penguins over windows ꜀( ꜆-ࡇ-)꜆ ᶻ 𝗓 𐰁</p>
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">// yes, I do both.</p>
           <div>
             <button
               onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}

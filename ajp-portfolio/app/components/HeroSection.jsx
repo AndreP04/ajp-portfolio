@@ -18,7 +18,7 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300">Hi, I'm </span>
             <br></br>
             <TypeAnimation
-              sequence={["Andre", 1000, "A Fullstack Engineer", 2000, "A Problem Solver", 1000, "An Innovator", 1000]}
+              sequence={["Andre", 1000, "A Full Stack Engineer", 2000, "A Problem Solver", 1000, "An Innovator", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}

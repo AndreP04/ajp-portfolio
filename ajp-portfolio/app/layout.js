@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
         {/* Particles Background */}
         <div className="fixed inset-0 -z-10">
           <ParticlesBackground
-            particleCount={1500}
+            particleCount={1200}
             particleSpread={10}
             particleColors={["#00b4d8", "#90e0ef", "#caf0f8"]}
-            speed={0.25}
+            speed={0.1}
             alphaParticles={true}
             moveParticlesOnHover={true}
             particleHoverFactor={1.5}

@@ -11,14 +11,10 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>TypeScript</li>
         <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>C#</li>
-        <li>.NET</li>
-        <li>Git</li>
-        <li>Github</li>
-        <li>Docker</li>
-        <li>MongoDB</li>
+        <li>NodeJS</li>
         <li>SQL</li>
+        <li>Git</li>
+        <li>Github/GitLab</li>
       </ul>
     )
   },
@@ -53,18 +49,6 @@ const TAB_DATA = [
         <li>12 Years of School Attendance Without Absence</li>
       </ul>
     )
-  },
-  {
-    title: "Roadmap",
-    id: "roadmap",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>NestJS</li>
-        <li>Angular</li>
-        <li>GitLab</li>
-        <li>GCloud</li>
-      </ul>
-    )
   }
 ];
 
@@ -91,10 +75,6 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
               {" "}
               Skills{" "}
-            </TabButton>
-            <TabButton selectTab={() => handleTabChange("roadmap")} active={tab === "roadmap"}>
-              {" "}
-              Roadmap{" "}
             </TabButton>
             {/* <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
               {" "}
